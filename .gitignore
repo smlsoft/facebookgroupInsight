@@ -1,0 +1,15 @@
+config.json
+__pycache__/
+*.pyc
+output/
+fb_chrome_profile/
+fb_firefox_profile/
+.playwright-mcp/
+fb_nodriver_cookies.json
+node_modules/
+.next/
+.env
+.env.local
+openclaw/data/
+dashboard/.next/
+dashboard/node_modules/

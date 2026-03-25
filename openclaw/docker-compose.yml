@@ -1,0 +1,20 @@
+services:
+  fb-scanner:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: fb-scanner
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Bangkok
+      - PYTHONUNBUFFERED=1
+      - OUTPUT_DIR=/app/output
+    volumes:
+      - ../output:/app/output
+      - ../config.json:/app/config.json:ro
+    shm_size: "2gb"
+    deploy:
+      resources:
+        limits:
+          memory: 4g
+          cpus: "2"

@@ -1,0 +1,31 @@
+{
+  "ai": {
+    "base_url": "https://api.xiaomimimo.com/v1",
+    "api_key": "YOUR_API_KEY_HERE",
+    "model": "mimo-v2-omni"
+  },
+  "mongodb": {
+    "uri": "mongodb+srv://USER:PASS@cluster0.xxxxx.mongodb.net/fb_scanner",
+    "db": "fb_scanner"
+  },
+  "facebook": {
+    "email": "YOUR_EMAIL",
+    "password": "YOUR_PASSWORD"
+  },
+  "keywords": [
+    "จำนองบ้าน",
+    "ขายฝากบ้าน"
+  ],
+  "settings": {
+    "max_scroll": 8,
+    "delay_min_sec": 2,
+    "delay_max_sec": 5,
+    "headless": true,
+    "screenshot_enabled": true,
+    "output_dir": "output",
+    "continuous": true,
+    "interval_minutes": 90,
+    "max_replies_per_group": 1,
+    "max_groups_per_round": 2
+  }
+}

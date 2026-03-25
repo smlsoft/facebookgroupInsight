@@ -1,0 +1,8 @@
+__pycache__
+.playwright-mcp
+fb_chrome_profile
+fb_firefox_profile
+openclaw
+output/screenshots
+*.pyc
+.git
